@@ -59,6 +59,13 @@ def update_worksheet(data, worksheet):
     worksheet_to_update.append_row(data)        
     print(f"{worksheet} worksheet updated successfully.\n")
 
-data = get_sales_data()
-sale_data = [int(num) for num in data]
-update_worksheet(sale_data, "sales")
+def main(): 
+    """
+    Run all program functions
+    """
+    data = get_sales_data()
+    sales_data = [int(num) for num in data]
+    update_worksheet(sales_data, "sales")
+
+print("Welcome to Love Sandwiches Data Automation")
+main()
